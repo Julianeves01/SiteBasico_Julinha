@@ -8,6 +8,10 @@ html {
     scroll-padding-top: 6rem;
     overflow-x: hidden;
 }
+section{
+    padding:2rem 9%; 
+    ;
+}
 
 header {
     position: fixed;
@@ -60,4 +64,152 @@ header .icons i {
 
 header .icons i:hover {
     color: var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: 5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    border: 1rem solid rgba(0, 0, 0, 0.3);
+    display: none;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8bdc6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para telas maiores */
+html {
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #fff;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #666;
+}
+
+header .icons i {
+    font-size: 2.5rem;
+    color: #333;
+    margin-left: 1.5rem;
+}
+
+/* Media para telas menores que 991px */
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: #eee;
+        border-top: 1rem solid rgba(0, 0, 0, 0.1);
+        display: none;
+}
+
+header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+header .navbar a{
+    margin: 1.5rem;
+    padding: 1.5rem;
+    background-color: #fff;
+    border: 1rem solid rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+/* styles.css */
+
+/* Estilos gerais */
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: flex; /* Usamos flexbox para colocar os itens lado a lado */
+    align-items: center; /* Alinha verticalmente ao centro */
+    padding: 20px; /* Adiciona algum espaço ao redor */
+    max-width: 1200px; /* Limita a largura máxima do contêiner */
+    margin: auto; /* Centraliza o contêiner horizontalmente */
+    background-color: #fff; /* Fundo branco para contraste */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adiciona sombra para efeito de profundidade */
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+.image {
+    width: 50%; /* Define a largura da imagem como 50% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Garante que a imagem cubra o contêiner sem distorcer */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    border-radius: 8px; /* Canto arredondado para a imagem */
+}
+
+.text {
+    flex: 1; /* Faz com que o bloco de texto ocupe o espaço restante */
+}
+
+.text h1 {
+    font-size: 2rem; /* Tamanho do título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+}
+
+.text p {
+    font-size: 1rem; /* Tamanho do parágrafo */
+    line-height: 1.5; /* Altura da linha para melhor legibilidade */
+    color: #333; /* Cor do texto */
 }
