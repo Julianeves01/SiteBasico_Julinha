@@ -66,13 +66,18 @@ header .fa-bars{
 }
 
 .home {
-    display: flex;
+   
     align-items: center;
     min-height: 100vh;
     background-color: #f8bdc6;
 }
 
-
+.title{
+    margin-left: 40%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: #FF4081;
+}
 html {
     font-size: 65.5%;
     scroll-behavior: smooth;
@@ -285,18 +290,8 @@ header .navbar {
     align-items: center;
 }
 
-/*contato*/
 
-
-
-
-
-
-
-
-
-
-/*sobre*/
+/* sobre*/
 footer p {
     color:#e40d7191;
     font-size: 1.2rem;
@@ -360,7 +355,7 @@ form button:hover{
 }
 
 
-/*teste do contato*/
+/* teste do contato*/
 header .icons {
     display: flex;
     gap: 1rem;
@@ -375,8 +370,6 @@ header .icons i {
 header .icons i:hover {
     color: var(--pink); /* Cor de destaque ao passar o mouse */
 }
-
-
 
 .circular-image img {
     text-align: right;
@@ -393,7 +386,29 @@ main {
     max-width: 800px;
     margin: 40px auto;
     border-radius: 8px;
-    box-shadow: rgb(136, 136, 35);
+    box-shadow: beige;
     margin-right: 20px;
 }
 
+/* configuraçoes do logo */
+.logo {
+    width: 110px;
+    height: 110px;
+    position: relative;
+}
+
+/* animaçao para a logo girar */
+.logo {
+    animation: spin 2s;
+
+}
+/* animaçao para a logo girar */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
