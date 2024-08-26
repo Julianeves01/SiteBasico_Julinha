@@ -394,15 +394,20 @@ form button:hover{
 }
 
 
-/*teste*/
-
-.container {
+/*teste do contato*/
+header .icons {
     display: flex;
-    align-items: center;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    gap: 1rem;
 }
+
+header .icons i {
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+header .icons i:hover {
+    color: var(--pink); /* Cor de destaque ao passar o mouse */
+}
+
+

@@ -6,32 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doceria Glamour</title>
     <link rel="stylesheet" href="assets/styles.index.css">
-    <nav>
-        <div class="icons">
-            <i class="fa-solid fa-house"></i><a href="index.html">home</a>
-            <i class="fa-solid fa-circle-info"></i><a href="sobre.html">sobre</a>
-            <i class="fa-solid fa-phone"></i><a href="contato.html">contato</a>
-        </div>
-    </nav>
-</header> <!-- Tag <header> corretamente fechada aqui -->
-<section class="home">
-</head>
-<body>
-    <h2>Teve dúvidas? Entre em contato!</h2>
-    <form>
-        <fieldset>
-            <legend>Informações Pessoais</legend>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="100">
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+        <a href="#" class="logo">Doceria Glamour<span>.</span></a>
+        <nav> 
+            <div class="icons">
+                <i class="fa-solid fa-house"></i> <a href="index.html">home</a>
+                <i class="fa-solid fa-circle-info"></i>  <a href="sobre.html">sobre</a>
+                <i class="fa-solid fa-phone"></i><a href="contato.html">contato</a>
+            </div>
+        </nav>
+    </header> 
+    </header>
+    <section class="home">
+        <h2>Teve dúvidas? Entre em contato!</h2>
+        <form>
+            <fieldset>
+                <legend>Informações Pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required maxlength="100">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" placeholder="seuemail@seuemail.com" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@seuemail.com" required>
 
-            <label for="descricao">Descrição:</label>
-            <textarea id="descricao" name="descricao"
-            rows="Deixe sua mensagem!" required></textarea>
-        </fieldset>
-        <button type="submit">Enviar</button>
-    </form>
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" placeholder="Deixe sua mensagem!" required></textarea>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
 </body>
+
 </html>
