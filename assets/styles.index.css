@@ -376,6 +376,8 @@ header .icons i:hover {
     color: var(--pink); /* Cor de destaque ao passar o mouse */
 }
 
+
+
 .circular-image img {
     text-align: right;
     margin-top: 3px;
@@ -391,7 +393,7 @@ main {
     max-width: 800px;
     margin: 40px auto;
     border-radius: 8px;
-    box-shadow: beige;
+    box-shadow: rgb(136, 136, 35);
     margin-right: 20px;
 }
 
