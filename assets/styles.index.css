@@ -9,20 +9,8 @@ html {
     overflow-x: hidden;
 }
 section{
-    padding:2rem 9%; 
+    padding: 1rem 2%; 
     ;
-}
-
-header {
-    position: fixed;
-    top: 0%; left: 0%; right: 0;
-    background-color: #fff;
-    padding: 2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -93,15 +81,8 @@ html {
 }
 
 header {
-    position: fixed;
     top: 0; left: 0; right: 0;
-    background-color: #fff;
-    padding: 2rem 9%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     z-index: 1000;
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 header .logo {
@@ -126,9 +107,7 @@ header .icons i {
         font-size: 60%;
     }
 
-    header {
-        padding: 2rem;
-    }
+
 }
     header .fa-bars {
         display: block;
@@ -154,7 +133,6 @@ header .navbar a{
 }
 
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
@@ -196,14 +174,11 @@ body {
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
     background-color: #f5f5f5;
-    color: #333;
 }
 
 header {
@@ -234,10 +209,6 @@ header .navbar a:hover {
     color: var(--pink); /* Cor de destaque ao passar o mouse */
 }
 
-header .icons {
-    display: flex;
-    gap: 1rem;
-}
 
 header .icons i {
     font-size: 1.5rem;
@@ -251,11 +222,9 @@ header .icons i:hover {
 }
 
 body {
-    font-family: 'Arial', sans-serif;
     background-color: #F9E5E1;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 header {
@@ -333,10 +302,7 @@ footer p {
     font-size: 1.2rem;
 }
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgba(235, 234, 234);
     color: aliceblue;
-    margin: 0;
 }
 h1{
     text-align: center;
@@ -410,4 +376,22 @@ header .icons i:hover {
     color: var(--pink); /* Cor de destaque ao passar o mouse */
 }
 
+.circular-image img {
+    text-align: right;
+    margin-top: 3px;
+    border-radius: 60%;
+    width: 150px;
+    height: 150px; 
+    object-fit: cover;
+    margin-right: 24px;
+} 
+main {
+    padding: 30px;
+    background: palevioletred;
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: beige;
+    margin-right: 20px;
+}
 
