@@ -88,6 +88,10 @@ html {
 header {
     top: 0; left: 0; right: 0;
     z-index: 1000;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .logo {
@@ -97,7 +101,7 @@ header .logo {
 }
 
 header .navbar a {
-    font-size: 2rem;
+    font-size: 3.0rem;
     padding: 0 1.5rem;
     color: #666;
 }
@@ -130,11 +134,12 @@ header #toggler:checked ~ .navbar{
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 header .navbar a{
-    margin: 1.5rem;
-    padding: 1.5rem;
+    margin: 3.0rem;
+    padding: 3.0rem;
     background-color: #fff;
     border: 1rem solid rgba(0, 0, 0, 0.1);
     display: block;
+    font-size: 3.0rem;
 }
 
 body {
@@ -239,6 +244,7 @@ header {
     padding: 20px 50px;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -362,32 +368,32 @@ header .icons {
 }
 
 header .icons i {
-    font-size: 1.5rem;
-    color: #333;
+    font-size: 2.0rem;
+    color: var(--pink);
     cursor: pointer;
     transition: color 0.3s ease;
 }
 header .icons i:hover {
     color: var(--pink); /* Cor de destaque ao passar o mouse */
 }
-
+.circular-image{
+    text-align: center;
+}
 .circular-image img {
-    text-align: right;
+    text-align: center;    
     margin-top: 3px;
     border-radius: 60%;
     width: 150px;
     height: 150px; 
-    object-fit: cover;
-    margin-right: 24px;
 } 
+
 main {
     padding: 30px;
     background: palevioletred;
     max-width: 800px;
     margin: 40px auto;
     border-radius: 8px;
-    box-shadow: beige;
-    margin-right: 20px;
+    margin-right: auto;
 }
 
 /* configuraçoes do logo */
@@ -411,4 +417,30 @@ main {
     to {
         transform: rotate(360deg);
     }
+}
+
+.centralize-link {
+    display: block; 
+    text-align: center; 
+    color: #ff69b4;
+    font-size: 18px; 
+    margin: 20px auto;
+    text-decoration: none; 
+}
+
+.centralize-link:hover {
+    color: #ff1493;
+    text-decoration: underline;
+}
+
+.centralize-text {
+    text-align: center; 
+    color: #000000;
+    font-size: 18px; /* Ajuste o tamanho da fonte como desejar */
+    margin: 20px auto; /* Adiciona espaço em torno do texto e o centraliza */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+}
+
+.centralize-text:hover {
+    color: #ff1493; /* Altera a cor do texto ao passar o mouse */
 }
