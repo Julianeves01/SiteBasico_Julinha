@@ -436,9 +436,9 @@ main {
 .centralize-text {
     text-align: center; 
     color: #000000;
-    font-size: 18px; /* Ajuste o tamanho da fonte como desejar */
-    margin: 20px auto; /* Adiciona espaço em torno do texto e o centraliza */
-    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    font-size: 18px; 
+    margin: 20px auto; 
+    font-family: Arial, sans-serif;
 }
 
 .centralize-text:hover {
